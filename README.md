@@ -4,6 +4,8 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+**🌐 Live Demo:** [athulmanoj-portfolio.vercel.app](https://athulmanoj-portfolio.vercel.app/)
+
 A sleek, modern, and highly modular personal portfolio website showcasing my skills, projects, certifications, and experience. Designed with a clean code architecture, this portfolio functions as a Single Page Application (SPA) but is uniquely strictly built natively using standard HTML, CSS, and modular Vanilla JavaScript.
 
 ## ✨ Features
