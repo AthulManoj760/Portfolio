@@ -1,7 +1,7 @@
 # Athul Manoj | Personal Portfolio 🚀
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://imgshields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 A sleek, modern, and highly modular personal portfolio website showcasing my skills, projects, certifications, and experience. Designed with a clean code architecture, this portfolio functions as a Single Page Application (SPA) but is uniquely strictly built natively using standard HTML, CSS, and modular Vanilla JavaScript.
@@ -42,8 +42,8 @@ Because this application dynamically renders its layout by securely `fetch()`-in
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
-   cd portfolio
+   git clone https://github.com/AthulManoj760/Portfolio.git
+   cd Portfolio
    ```
 
 2. **Spin up a local Web Server** using any of these popular methods:
@@ -63,9 +63,9 @@ Because this application dynamically renders its layout by securely `fetch()`-in
 
 Feel free to reach out if you're looking for a developer, have a question, or just want to connect!
 
-- **Email:** athul.manoj@example.com (replace with real email inside contact.html)
-- **LinkedIn:** [Athul Manoj T P](https://linkedin.com/in/)
-- **GitHub:** [@AthulManoj](https://github.com/)
+- **Email:** [athulmanoj760@gmail.com](mailto:athulmanoj760@gmail.com)
+- **LinkedIn:** [Athul Manoj T P](https://www.linkedin.com/in/athul-manoj-t-p-3a66522b9/)
+- **GitHub:** [@AthulManoj](https://github.com/AthulManoj760)
 
 ---
 <p align="center">Built with precision. Engineering solutions one line at a time.</p>
