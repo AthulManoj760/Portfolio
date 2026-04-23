@@ -402,7 +402,10 @@
     background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
     transform: translate(-50%, -50%); transition: opacity 0.3s;
   }
-  @media (max-width: 768px) { .cursor-glow { display: none; } }
+  @media (max-width: 768px) { 
+    .cursor-glow { display: none; } 
+    .hero-scroll { display: none; }
+  }
 
   /* ACTIVE NAV */
   .nav-links a.active { color: var(--electric); }
