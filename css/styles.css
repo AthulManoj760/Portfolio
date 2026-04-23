@@ -190,6 +190,7 @@
     letter-spacing: 0.1em; text-transform: uppercase; opacity: 0;
     animation: fadeUp 0.7s 1s forwards;
   }
+  .hero-scroll span { margin-right: -0.1em; }
   .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--electric), transparent); animation: scrollPulse 2s ease-in-out infinite; }
 
   /* SECTION TITLES */
@@ -406,3 +407,29 @@
   /* ACTIVE NAV */
   .nav-links a.active { color: var(--electric); }
   .nav-links a.active::after { width: 100%; }
+
+  /* LIGHT MODE SPECIFIC UI OVERRIDES */
+  [data-theme="light"] .tech-tag,
+  [data-theme="light"] .skill-tag {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--text-secondary);
+  }
+  [data-theme="light"] .skill-tag.green {
+    background: rgba(0, 200, 83, 0.1);
+    border-color: rgba(0, 200, 83, 0.3);
+    color: #0b8036;
+  }
+  [data-theme="light"] .c-txt {
+    color: #0f172a !important; /* Pitch dark slate for high readability on white */
+    font-weight: 500;
+  }
+  [data-theme="light"] .project-modal-content, [data-theme="light"] .pm-content {
+    background: #ffffff;
+    border-color: #cbd5e1;
+  }
+
+  /* MOBILE GRID COMPACTION */
+  @media (max-width: 480px) {
+    .projects-grid, .skills-grid, .cert-grid { grid-template-columns: 1fr; }
+  }
