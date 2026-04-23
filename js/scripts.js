@@ -88,19 +88,47 @@ function initializeScripts() {
   revealEls.forEach(el => revealObserver.observe(el));
 
   // CONTACT FORM
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     const status = document.getElementById('form-status');
-    const btn = e.target.querySelector('button[type="submit"]');
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    
     btn.textContent = 'Sending...';
     btn.disabled = true;
-    setTimeout(() => {
-      status.className = 'form-status success';
-      status.textContent = '✓ Message sent! I\'ll get back to you within 24 hours.';
-      e.target.reset();
+
+    // Collect data to JSON
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    object['access_key'] = 'cf450096-878c-4d57-854b-51cec0aa2ba3';
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: json
+      });
+      const resJson = await res.json();
+      
+      if (res.status === 200) {
+        status.className = 'form-status success';
+        status.textContent = '✓ Message delivered directly to my inbox! I will contact you shortly.';
+        form.reset();
+      } else {
+        status.className = 'form-status error';
+        status.textContent = 'Error sending message: ' + (resJson.message || 'unknown error');
+        status.style.color = '#ef4444';
+      }
+    } catch(err) {
+      status.className = 'form-status error';
+      status.textContent = 'Network error. Please try again.';
+      status.style.color = '#ef4444';
+      console.error(err);
+    } finally {
       btn.innerHTML = '<svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg> Send Message';
       btn.disabled = false;
-    }, 1400);
+    }
   }
 
 
