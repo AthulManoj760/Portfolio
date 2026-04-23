@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const components = ['hero', 'about', 'skills', 'projects', 'certifications', 'contact'];
+    const components = ['hero', 'about', 'projects', 'certifications', 'contact'];
     
     Promise.all(components.map(cmp => 
         fetch(`components/${cmp}.html?v=` + Date.now())
