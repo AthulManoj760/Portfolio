@@ -108,4 +108,18 @@ function initializeScripts() {
     if (typeof handleSubmit === 'function') {
         window.handleSubmit = handleSubmit;
     }
+
+  // Handle Project Modal globally
+  window.openProjectModal = function(card) {
+    const dataContainer = card.querySelector('.pm-data');
+    if(!dataContainer) return;
+    document.getElementById('pm-inner').innerHTML = dataContainer.innerHTML;
+    document.getElementById('project-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+  window.closeProjectModal = function() {
+    document.getElementById('project-modal').classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
 }
