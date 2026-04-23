@@ -331,6 +331,7 @@
     transition: border-color var(--transition), transform var(--transition);
   }
   .cert-card:hover { border-color: var(--neon); transform: translateX(4px); }
+  .cert-card.clickable { cursor: pointer; }
   .cert-icon {
     width: 36px; height: 36px; flex-shrink: 0; border-radius: 8px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(180,180,180,0.05));
