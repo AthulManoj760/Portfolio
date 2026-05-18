@@ -5,8 +5,60 @@
   <div class="section-divider reveal"></div>
   <div class="projects-grid">
 
-    <!-- RupeeLog -->
+    <!-- Omnia -->
     <div class="project-card featured reveal clickable" onclick="openProjectModal(this)">
+      <div class="project-badge">Personal Project</div>
+      <div class="project-title">Omnia</div>
+      <p class="project-desc">A full-stack school management system built to digitize and streamline operations, offering a centralized administrator dashboard.</p>
+      <div class="project-tech">
+        <span class="tech-tag">[React]</span>
+        <span class="tech-tag">[Vite]</span>
+        <span class="tech-tag">[Tailwind CSS]</span>
+        <span class="tech-tag">[Supabase]</span>
+        <span class="tech-tag">[PostgreSQL]</span>
+      </div>
+
+      <!-- HIDDEN MODAL DATA -->
+      <div class="pm-data" style="display: none;">
+        <h3>Omnia — School Management System</h3>
+        <p>A full-stack web application built to digitize and streamline school operations. Omnia provides a centralized platform for administrators to manage every aspect of a school from a single dashboard.</p>
+
+        <span class="pm-subtitle">Key Features</span>
+        <ul>
+          <li><strong>Student Management:</strong> Complete student profiles with personal details, emergency contacts, medical notes and admission records</li>
+          <li><strong>Attendance Tracking:</strong> Mark and monitor daily attendance per class with present, absent, late and leave status</li>
+          <li><strong>Grades & Report Cards:</strong> Record subject-wise exam results with automatic grade calculation and printable report cards</li>
+          <li><strong>Fee Management:</strong> Track fee structures, record payments and monitor collected, pending and overdue amounts</li>
+          <li><strong>Activities & Clubs:</strong> Manage extracurricular activities, enroll students and record achievements</li>
+          <li><strong>Timetable:</strong> Build and manage class schedules period by period with subject and teacher assignment</li>
+          <li><strong>Communication:</strong> Send targeted announcements to students, teachers, parents or everyone</li>
+          <li><strong>Activity Timeline:</strong> Every action across all modules is automatically logged to each student's profile creating a complete school journey record</li>
+        </ul>
+
+        <span class="pm-subtitle">Tech Stack</span>
+        <div class="project-tech" style="margin-bottom: 1.5rem">
+          <span class="tech-tag">React.js</span>
+          <span class="tech-tag">Vite</span>
+          <span class="tech-tag">Tailwind CSS</span>
+          <span class="tech-tag">Lucide React</span>
+          <span class="tech-tag">React Router DOM</span>
+          <span class="tech-tag">Recharts</span>
+          <span class="tech-tag">React Hot Toast</span>
+          <span class="tech-tag">Supabase</span>
+          <span class="tech-tag">PostgreSQL</span>
+        </div>
+
+        <div class="pm-links">
+          <a href="https://omnia-school.vercel.app/" target="_blank" class="btn btn-primary"
+            style="font-size: 0.8rem; padding: 0.6rem 1rem">Live Demo →</a>
+          <a href="https://github.com/AthulManoj760/school-app" target="_blank" class="btn btn-secondary"
+            style="font-size: 0.8rem; padding: 0.6rem 1rem">GitHub Repo →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RupeeLog -->
+    <div class="project-card featured reveal reveal-delay-1 clickable" onclick="openProjectModal(this)">
       <div class="project-badge">Personal Project</div>
       <div class="project-title">RupeeLog</div>
       <p class="project-desc">A personal expense tracking web application that helps users manage their daily spending
@@ -50,7 +102,7 @@
     </div>
 
     <!-- KTU Q-GEN -->
-    <div class="project-card reveal reveal-delay-1 clickable" onclick="openProjectModal(this)">
+    <div class="project-card reveal reveal-delay-2 clickable" onclick="openProjectModal(this)">
       <div class="project-badge">College Mini Project</div>
       <div class="project-title">KTU Q-GEN</div>
       <p class="project-desc">An AI question paper generator focusing primarily on internal exams. Each question is
